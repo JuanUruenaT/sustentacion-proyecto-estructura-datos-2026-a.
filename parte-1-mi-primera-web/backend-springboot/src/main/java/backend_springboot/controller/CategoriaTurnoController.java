@@ -32,4 +32,10 @@ public class CategoriaTurnoController {
 
         return repository.save(categoria);
     }
+
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable Long id){
+
+        repository.deleteById(id);
+    }
 }

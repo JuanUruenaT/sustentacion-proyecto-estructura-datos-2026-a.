@@ -37,4 +37,11 @@ public class TurnoController {
 
         return repository.save(turno);
     }
+
+    @DeleteMapping("/{id}")
+    public void eliminar(@PathVariable Long id){
+
+        repository.deleteById(id);
+    }
 }
+

@@ -49,3 +49,4 @@ public class CategoriaTurno {
         this.descripcion = descripcion;
     }
 }
+

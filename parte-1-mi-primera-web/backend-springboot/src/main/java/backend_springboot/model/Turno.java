@@ -13,6 +13,8 @@ public class Turno {
 
     private Integer numeroTurno;
 
+    private String fecha;
+
     @ManyToOne
     private Persona persona;
 
