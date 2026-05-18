@@ -3,131 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE DEL TEMA</title>
+    <title>Listas Enlazadas Simples</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>NOMBRE DEL TEMA</h1>
-            <p>
-                Breve descripción introductoria del tema
-            </p>
-        </div>
-    </header>
-
-    <!-- DOCUMENTACIÓN -->
-    <section class="temas">
-        <h2>1. Documentación</h2>
-
-        <h3>Definición</h3>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Listas Enlazadas Simples</h1>
         <p>
-            Aquí explicas qué es el tema.
+            Las listas enlazadas simples permiten almacenar información de manera dinámica
+            mediante nodos conectados entre sí, facilitando la inserción y eliminación
+            de datos sin necesidad de reorganizar toda la estructura.
         </p>
+    </div>
+</header>
 
-        <h3>Utilidad</h3>
-        <p>
-            Explica para qué sirve y por qué se utiliza.
-        </p>
+<section class="temas">
 
-        <h3>Características</h3>
-        <ul>
-            <li>Característica 1</li>
-            <li>Característica 2</li>
-            <li>Característica 3</li>
-        </ul>
+    <h2>1. Documentación</h2>
 
-        <h3>Representación</h3>
-        <pre>
-Aquí va una representación visual
-o ejemplo gráfico simple
-        </pre>
+    <h3>Definición</h3>
 
-        <h3>Casos de uso</h3>
-        <p>
-            Explica dónde se aplica.
-        </p>
-    </section>
+    <p>
+        Las listas enlazadas simples son estructuras de datos dinámicas compuestas por
+        nodos. Cada nodo contiene dos partes fundamentales: un dato y una referencia
+        que apunta hacia el siguiente nodo de la lista.
 
-    <!-- EJEMPLOS -->
-    <section class="temas">
-        <h2>2. Ejemplos Solucionados</h2>
+        A diferencia de los arrays, las listas enlazadas no almacenan los elementos
+        en posiciones consecutivas de memoria, sino que cada nodo puede encontrarse
+        en diferentes ubicaciones y conectarse mediante referencias.
 
-        <h3>Ejemplo 1</h3>
-        <p>
-            Enunciado del ejercicio.
-        </p>
+        Esta característica permite que la estructura pueda crecer o disminuir durante
+        la ejecución del programa sin necesidad de reservar memoria fija desde el inicio.
+        Por esta razón, las listas enlazadas son ampliamente utilizadas en sistemas donde
+        la cantidad de información cambia constantemente.
+    </p>
 
-        <pre>
-Código o solución
-        </pre>
+    <h3>Utilidad</h3>
 
-        <p>
-            Explicación paso a paso:
-        </p>
-        <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ul>
+    <p>
+        Las listas enlazadas son muy útiles cuando se requiere insertar o eliminar datos
+        frecuentemente. Por ejemplo, en aplicaciones hospitalarias donde ingresan pacientes
+        constantemente, en sistemas de reproducción musical o en plataformas que manejan
+        colas dinámicas de usuarios.
 
-        <h3>Ejemplo 2</h3>
-        <p>
-            Segundo ejercicio resuelto.
-        </p>
+        También son utilizadas en sistemas operativos, videojuegos y aplicaciones de
+        inteligencia artificial debido a la flexibilidad que ofrecen para administrar
+        grandes cantidades de datos dinámicos.
+    </p>
 
-        <pre>
-Código o solución
-        </pre>
-    </section>
+    <h3>Características</h3>
 
-    <!-- RETOS -->
-    <section class="temas">
-        <h2>3. Retos</h2>
+    <ul>
+        <li>Son estructuras dinámicas.</li>
+        <li>No requieren tamaño fijo.</li>
+        <li>Cada nodo apunta al siguiente.</li>
+        <li>Permiten inserciones rápidas.</li>
+        <li>Facilitan la eliminación de elementos.</li>
+        <li>Utilizan memoria únicamente cuando es necesaria.</li>
+    </ul>
 
-        <h3>Reto 1</h3>
-        <p>
-            Planteamiento del ejercicio.
-        </p>
+    <h3>Representación</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+    <pre>
+[Nodo1|•] → [Nodo2|•] → [Nodo3|•] → [null]
+    </pre>
 
-        <h3>Reto 2</h3>
-        <p>
-            Segundo reto sin resolver.
-        </p>
+    <h3>Casos de uso</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
-    </section>
+    <p>
+        Un ejemplo muy común ocurre en aplicaciones de navegación web. Cada página
+        visitada puede almacenarse como un nodo enlazado al siguiente historial,
+        permitiendo avanzar o retroceder entre páginas consultadas.
 
-    <!-- VIDEO -->
-    <section class="temas">
-        <h2>4. Clip Explicativo</h2>
+        Otro caso importante aparece en videojuegos multijugador donde continuamente
+        ingresan y salen jugadores conectados al servidor.
+    </p>
 
-        <p>
-            Inserta aquí el enlace del video o embébelo.
-        </p>
+</section>
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
+<section class="temas">
 
-    <!-- BOTÓN VOLVER -->
-    <section class="temas" style="text-align:center;">
-        <a href="../index.html" class="card">Volver al inicio</a>
-    </section>
+    <h2>2. Ejemplos Solucionados</h2>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Proyecto Académico - Estructura de Datos 2026</p>
-    </footer>
+    <h3>Ejemplo 1</h3>
+
+    <p>
+        Una aplicación científica necesita registrar satélites detectados durante
+        una exploración espacial.
+    </p>
+
+    <pre>
+class Nodo {
+
+    String satelite;
+    Nodo siguiente;
+
+    public Nodo(String satelite){
+
+        this.satelite = satelite;
+        this.siguiente = null;
+    }
+}
+
+public class ListaSatelites {
+
+    public static void main(String[] args) {
+
+        Nodo n1 = new Nodo("Hubble-X");
+        Nodo n2 = new Nodo("Nova-21");
+        Nodo n3 = new Nodo("Explorer-9");
+
+        n1.siguiente = n2;
+        n2.siguiente = n3;
+
+        Nodo actual = n1;
+
+        while(actual != null){
+
+            System.out.println(actual.satelite);
+
+            actual = actual.siguiente;
+        }
+    }
+}
+    </pre>
+
+    <p>
+        Explicación paso a paso:
+    </p>
+
+    <ul>
+        <li>Se crea la clase Nodo.</li>
+        <li>Cada nodo almacena un nombre y una referencia.</li>
+        <li>Los nodos se conectan entre sí.</li>
+        <li>El ciclo recorre toda la lista.</li>
+        <li>Los satélites se muestran en pantalla.</li>
+    </ul>
+
+    <h3>Ejemplo 2</h3>
+
+    <p>
+        Un laboratorio registra muestras biológicas analizadas durante una investigación.
+    </p>
+
+    <pre>
+class Muestra {
+
+    String codigo;
+    Muestra siguiente;
+
+    public Muestra(String codigo){
+
+        this.codigo = codigo;
+    }
+}
+
+public class Laboratorio {
+
+    public static void main(String[] args) {
+
+        Muestra m1 = new Muestra("BIO-900");
+        Muestra m2 = new Muestra("BIO-901");
+
+        m1.siguiente = m2;
+
+        System.out.println(m1.codigo);
+        System.out.println(m1.siguiente.codigo);
+    }
+}
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>3. Retos</h2>
+
+    <h3>Reto 1</h3>
+
+    <p>
+        Diseña una lista enlazada que almacene nombres de estaciones espaciales
+        y recorra todos los nodos mostrando la información.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Utiliza una variable auxiliar para recorrer la lista.
+    </p>
+
+    <h3>Reto 2</h3>
+
+    <p>
+        Crea una lista enlazada para almacenar códigos de expediciones marítimas
+        y agrega al menos cinco nodos conectados.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Cada nodo debe apuntar al siguiente nodo.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>4. Clip Explicativo</h2>
+
+    <p>
+        El siguiente video explica el funcionamiento de las listas enlazadas simples.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/N6dOwBde7-M"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<section class="temas" style="text-align:center;">
+    <a href="../index.html" class="card">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>Proyecto Académico - Estructura de Datos 2026</p>
+</footer>
 
 </body>
 </html>

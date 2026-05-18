@@ -3,131 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE DEL TEMA</title>
+    <title>Árboles Binarios</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>NOMBRE DEL TEMA</h1>
-            <p>
-                Breve descripción introductoria del tema
-            </p>
-        </div>
-    </header>
-
-    <!-- DOCUMENTACIÓN -->
-    <section class="temas">
-        <h2>1. Documentación</h2>
-
-        <h3>Definición</h3>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Árboles Binarios</h1>
         <p>
-            Aquí explicas qué es el tema.
+            Los árboles binarios permiten organizar información jerárquicamente
+            mediante nodos conectados, facilitando búsquedas, recorridos y
+            administración eficiente de datos complejos.
         </p>
+    </div>
+</header>
 
-        <h3>Utilidad</h3>
-        <p>
-            Explica para qué sirve y por qué se utiliza.
-        </p>
+<section class="temas">
 
-        <h3>Características</h3>
-        <ul>
-            <li>Característica 1</li>
-            <li>Característica 2</li>
-            <li>Característica 3</li>
-        </ul>
+    <h2>1. Documentación</h2>
 
-        <h3>Representación</h3>
-        <pre>
-Aquí va una representación visual
-o ejemplo gráfico simple
-        </pre>
+    <h3>Definición</h3>
 
-        <h3>Casos de uso</h3>
-        <p>
-            Explica dónde se aplica.
-        </p>
-    </section>
+    <p>
+        Los árboles binarios son estructuras de datos jerárquicas compuestas
+        por nodos conectados entre sí. Cada nodo puede contener información
+        y tener máximo dos nodos hijos conocidos como hijo izquierdo e hijo derecho.
 
-    <!-- EJEMPLOS -->
-    <section class="temas">
-        <h2>2. Ejemplos Solucionados</h2>
+        El primer nodo del árbol recibe el nombre de raíz y representa el punto
+        principal desde donde se conectan todos los demás nodos. A partir de allí,
+        la estructura se expande formando diferentes niveles.
 
-        <h3>Ejemplo 1</h3>
-        <p>
-            Enunciado del ejercicio.
-        </p>
+        Los árboles binarios son muy importantes dentro de la programación debido
+        a que permiten representar información organizada jerárquicamente, facilitando
+        búsquedas rápidas y recorridos eficientes.
 
-        <pre>
-Código o solución
-        </pre>
+        Este tipo de estructuras son ampliamente utilizadas en inteligencia artificial,
+        bases de datos, videojuegos, compiladores y sistemas de navegación.
+    </p>
 
-        <p>
-            Explicación paso a paso:
-        </p>
-        <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ul>
+    <h3>Utilidad</h3>
 
-        <h3>Ejemplo 2</h3>
-        <p>
-            Segundo ejercicio resuelto.
-        </p>
+    <p>
+        Los árboles binarios son utilizados cuando se necesita organizar información
+        en forma jerárquica. Por ejemplo, en sistemas genealógicos donde cada persona
+        puede relacionarse con diferentes descendientes o en plataformas educativas
+        donde existen categorías y subcategorías organizadas.
 
-        <pre>
-Código o solución
-        </pre>
-    </section>
+        También aparecen en sistemas de archivos de computadores, donde las carpetas
+        contienen subcarpetas y documentos conectados jerárquicamente.
 
-    <!-- RETOS -->
-    <section class="temas">
-        <h2>3. Retos</h2>
+        En videojuegos modernos, los árboles binarios son utilizados para controlar
+        decisiones automáticas de personajes y comportamientos de inteligencia artificial.
+    </p>
 
-        <h3>Reto 1</h3>
-        <p>
-            Planteamiento del ejercicio.
-        </p>
+    <h3>Características</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+    <ul>
+        <li>Son estructuras jerárquicas.</li>
+        <li>Cada nodo puede tener máximo dos hijos.</li>
+        <li>Poseen un nodo principal llamado raíz.</li>
+        <li>Facilitan búsquedas eficientes.</li>
+        <li>Permiten recorridos organizados.</li>
+        <li>Son utilizadas en múltiples sistemas tecnológicos.</li>
+    </ul>
 
-        <h3>Reto 2</h3>
-        <p>
-            Segundo reto sin resolver.
-        </p>
+    <h3>Representación</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
-    </section>
+    <pre>
+              50
+             /  \
+           30    80
+          / \    / \
+        10  40 70  95
+    </pre>
 
-    <!-- VIDEO -->
-    <section class="temas">
-        <h2>4. Clip Explicativo</h2>
+    <h3>Casos de uso</h3>
 
-        <p>
-            Inserta aquí el enlace del video o embébelo.
-        </p>
+    <p>
+        Un caso muy común ocurre en los sistemas de almacenamiento en la nube.
+        Las carpetas y archivos se organizan jerárquicamente utilizando estructuras
+        similares a árboles.
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
+        Otro ejemplo aparece en videojuegos de estrategia donde las decisiones
+        automáticas de los personajes se calculan mediante árboles de decisiones.
+    </p>
 
-    <!-- BOTÓN VOLVER -->
-    <section class="temas" style="text-align:center;">
-        <a href="../index.html" class="card">Volver al inicio</a>
-    </section>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Proyecto Académico - Estructura de Datos 2026</p>
-    </footer>
+<section class="temas">
+
+    <h2>2. Partes de un Árbol Binario</h2>
+
+    <h3>Raíz</h3>
+
+    <p>
+        Es el nodo principal desde donde inicia toda la estructura del árbol.
+    </p>
+
+    <h3>Nodos Hijos</h3>
+
+    <p>
+        Son los nodos conectados debajo de otro nodo principal.
+    </p>
+
+    <h3>Hojas</h3>
+
+    <p>
+        Son nodos que no poseen hijos.
+    </p>
+
+    <h3>Subárbol</h3>
+
+    <p>
+        Corresponde a una sección interna del árbol principal.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>3. Ejemplos Solucionados</h2>
+
+    <h3>Ejemplo 1</h3>
+
+    <p>
+        Una estación meteorológica necesita organizar sensores climáticos
+        mediante un árbol binario.
+    </p>
+
+    <pre>
+class Nodo {
+
+    int dato;
+    Nodo izquierdo;
+    Nodo derecho;
+
+    public Nodo(int dato){
+
+        this.dato = dato;
+    }
+}
+
+public class Sensores {
+
+    public static void main(String[] args) {
+
+        Nodo raiz = new Nodo(50);
+
+        raiz.izquierdo = new Nodo(30);
+        raiz.derecho = new Nodo(80);
+
+        raiz.izquierdo.izquierdo = new Nodo(10);
+        raiz.izquierdo.derecho = new Nodo(40);
+
+        System.out.println("Nodo raíz:");
+
+        System.out.println(raiz.dato);
+
+        System.out.println("Hijo izquierdo:");
+
+        System.out.println(raiz.izquierdo.dato);
+
+        System.out.println("Hijo derecho:");
+
+        System.out.println(raiz.derecho.dato);
+    }
+}
+    </pre>
+
+    <p>
+        Explicación paso a paso:
+    </p>
+
+    <ul>
+        <li>Se crea la clase Nodo.</li>
+        <li>Cada nodo posee hijos izquierdo y derecho.</li>
+        <li>La raíz inicia el árbol.</li>
+        <li>Los demás nodos se conectan jerárquicamente.</li>
+        <li>La información se muestra en pantalla.</li>
+    </ul>
+
+    <h3>Ejemplo 2</h3>
+
+    <p>
+        Un sistema submarino necesita recorrer nodos de exploración.
+    </p>
+
+    <pre>
+class Nodo {
+
+    String zona;
+    Nodo izquierdo;
+    Nodo derecho;
+
+    public Nodo(String zona){
+
+        this.zona = zona;
+    }
+}
+
+public class Oceano {
+
+    public static void recorrer(Nodo nodo){
+
+        if(nodo != null){
+
+            System.out.println(nodo.zona);
+
+            recorrer(nodo.izquierdo);
+
+            recorrer(nodo.derecho);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Nodo raiz = new Nodo("Zona Central");
+
+        raiz.izquierdo = new Nodo("Zona Norte");
+        raiz.derecho = new Nodo("Zona Sur");
+
+        recorrer(raiz);
+    }
+}
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>4. Retos</h2>
+
+    <h3>Reto 1</h3>
+
+    <p>
+        Diseña un árbol binario que represente estaciones espaciales
+        conectadas jerárquicamente.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Cada nodo debe poseer hijo izquierdo y derecho.
+    </p>
+
+    <h3>Reto 2</h3>
+
+    <p>
+        Crea un árbol binario que almacene niveles de energía registrados
+        por una central nuclear inteligente.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Utiliza recorridos recursivos.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>5. Clip Explicativo</h2>
+
+    <p>
+        El siguiente video explica el funcionamiento de los árboles binarios.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fAAZixBzIAI"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<section class="temas" style="text-align:center;">
+    <a href="../index.html" class="card">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>Proyecto Académico - Estructura de Datos 2026</p>
+</footer>
 
 </body>
 </html>

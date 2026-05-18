@@ -3,131 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE DEL TEMA</title>
+    <title>Tablas Hash</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>NOMBRE DEL TEMA</h1>
-            <p>
-                Breve descripción introductoria del tema
-            </p>
-        </div>
-    </header>
-
-    <!-- DOCUMENTACIÓN -->
-    <section class="temas">
-        <h2>1. Documentación</h2>
-
-        <h3>Definición</h3>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Tablas Hash</h1>
         <p>
-            Aquí explicas qué es el tema.
+            Las tablas hash permiten almacenar y recuperar información de manera
+            extremadamente rápida utilizando claves únicas asociadas a cada dato.
         </p>
+    </div>
+</header>
 
-        <h3>Utilidad</h3>
-        <p>
-            Explica para qué sirve y por qué se utiliza.
-        </p>
+<section class="temas">
 
-        <h3>Características</h3>
-        <ul>
-            <li>Característica 1</li>
-            <li>Característica 2</li>
-            <li>Característica 3</li>
-        </ul>
+    <h2>1. Documentación</h2>
 
-        <h3>Representación</h3>
-        <pre>
-Aquí va una representación visual
-o ejemplo gráfico simple
-        </pre>
+    <h3>Definición</h3>
 
-        <h3>Casos de uso</h3>
-        <p>
-            Explica dónde se aplica.
-        </p>
-    </section>
+    <p>
+        Las tablas hash son estructuras de datos utilizadas para almacenar información
+        mediante pares de clave y valor. Su funcionamiento se basa en una función hash,
+        la cual transforma una clave en una posición específica dentro de una tabla.
 
-    <!-- EJEMPLOS -->
-    <section class="temas">
-        <h2>2. Ejemplos Solucionados</h2>
+        Gracias a este mecanismo, las búsquedas, inserciones y eliminaciones pueden
+        realizarse de manera muy rápida, incluso cuando existen grandes cantidades
+        de información almacenada.
 
-        <h3>Ejemplo 1</h3>
-        <p>
-            Enunciado del ejercicio.
-        </p>
+        Una clave representa un identificador único, mientras que el valor corresponde
+        a la información asociada a dicha clave. Por ejemplo, en un sistema universitario,
+        el código del estudiante podría ser la clave y el nombre completo sería el valor.
 
-        <pre>
-Código o solución
-        </pre>
+        Las tablas hash son ampliamente utilizadas debido a su eficiencia y capacidad
+        para manejar enormes volúmenes de datos en tiempo real.
+    </p>
 
-        <p>
-            Explicación paso a paso:
-        </p>
-        <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ul>
+    <h3>Utilidad</h3>
 
-        <h3>Ejemplo 2</h3>
-        <p>
-            Segundo ejercicio resuelto.
-        </p>
+    <p>
+        Las tablas hash aparecen en múltiples sistemas modernos como bases de datos,
+        aplicaciones bancarias, redes sociales y plataformas de autenticación.
 
-        <pre>
-Código o solución
-        </pre>
-    </section>
+        Por ejemplo, cuando un usuario inicia sesión en una aplicación, el sistema
+        utiliza tablas hash para encontrar rápidamente la información correspondiente
+        al correo electrónico o nombre de usuario ingresado.
 
-    <!-- RETOS -->
-    <section class="temas">
-        <h2>3. Retos</h2>
+        También son utilizadas en motores de búsqueda, sistemas de inteligencia artificial,
+        almacenamiento en caché y plataformas de comercio electrónico donde se requiere
+        acceso inmediato a la información.
+    </p>
 
-        <h3>Reto 1</h3>
-        <p>
-            Planteamiento del ejercicio.
-        </p>
+    <h3>Características</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+    <ul>
+        <li>Permiten búsquedas extremadamente rápidas.</li>
+        <li>Utilizan pares clave-valor.</li>
+        <li>Funcionan mediante funciones hash.</li>
+        <li>Optimizan el acceso a grandes cantidades de datos.</li>
+        <li>Son ampliamente utilizadas en bases de datos.</li>
+        <li>Facilitan almacenamiento eficiente de información.</li>
+    </ul>
 
-        <h3>Reto 2</h3>
-        <p>
-            Segundo reto sin resolver.
-        </p>
+    <h3>Representación</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
-    </section>
+    <pre>
+Clave --------→ Valor
 
-    <!-- VIDEO -->
-    <section class="temas">
-        <h2>4. Clip Explicativo</h2>
+1020 --------→ "Camila"
+2045 --------→ "Andrés"
+3500 --------→ "Valentina"
+    </pre>
 
-        <p>
-            Inserta aquí el enlace del video o embébelo.
-        </p>
+    <h3>Casos de uso</h3>
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
+    <p>
+        Un ejemplo moderno aparece en las plataformas de streaming donde millones
+        de usuarios acceden simultáneamente a películas y canciones. Las tablas hash
+        permiten localizar rápidamente perfiles, historiales y preferencias.
 
-    <!-- BOTÓN VOLVER -->
-    <section class="temas" style="text-align:center;">
-        <a href="../index.html" class="card">Volver al inicio</a>
-    </section>
+        Otro caso importante ocurre en sistemas financieros donde se requiere consultar
+        cuentas bancarias y movimientos económicos en cuestión de milisegundos.
+    </p>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Proyecto Académico - Estructura de Datos 2026</p>
-    </footer>
+</section>
+
+<section class="temas">
+
+    <h2>2. Ejemplos Solucionados</h2>
+
+    <h3>Ejemplo 1</h3>
+
+    <p>
+        Un centro astronómico necesita almacenar códigos de galaxias detectadas
+        junto con sus respectivos nombres.
+    </p>
+
+    <pre>
+import java.util.HashMap;
+
+public class Galaxias {
+
+    public static void main(String[] args) {
+
+        HashMap<Integer, String> galaxias = new HashMap<>();
+
+        galaxias.put(1001, "Andromeda-X");
+        galaxias.put(1002, "Nebula Prime");
+        galaxias.put(1003, "Orion Deep");
+
+        System.out.println("Galaxia encontrada:");
+
+        System.out.println(galaxias.get(1002));
+    }
+}
+    </pre>
+
+    <p>
+        Explicación paso a paso:
+    </p>
+
+    <ul>
+        <li>Se crea una tabla hash utilizando HashMap.</li>
+        <li>Las claves son números enteros.</li>
+        <li>Los valores corresponden a nombres de galaxias.</li>
+        <li>put() almacena información.</li>
+        <li>get() recupera datos mediante la clave.</li>
+    </ul>
+
+    <h3>Ejemplo 2</h3>
+
+    <p>
+        Un sistema marítimo necesita registrar submarinos y sus profundidades máximas.
+    </p>
+
+    <pre>
+import java.util.HashMap;
+
+public class Submarinos {
+
+    public static void main(String[] args) {
+
+        HashMap<String, Integer> profundidades = new HashMap<>();
+
+        profundidades.put("Neptune-1", 850);
+        profundidades.put("Titan-Sea", 1200);
+        profundidades.put("Blue-Ocean", 980);
+
+        for(String submarino : profundidades.keySet()){
+
+            System.out.println(submarino + " → " 
+            + profundidades.get(submarino) + " metros");
+        }
+    }
+}
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>3. Colisiones en Tablas Hash</h2>
+
+    <h3>¿Qué es una colisión?</h3>
+
+    <p>
+        Una colisión ocurre cuando dos claves diferentes generan la misma posición
+        dentro de la tabla hash. Este problema es común y existen diferentes técnicas
+        para solucionarlo.
+    </p>
+
+    <h3>Métodos de solución</h3>
+
+    <ul>
+        <li>Encadenamiento mediante listas enlazadas.</li>
+        <li>Reasignación de posiciones.</li>
+        <li>Direcciones abiertas.</li>
+        <li>Hashing doble.</li>
+    </ul>
+
+</section>
+
+<section class="temas">
+
+    <h2>4. Retos</h2>
+
+    <h3>Reto 1</h3>
+
+    <p>
+        Diseña una tabla hash que almacene nombres de robots industriales
+        junto con sus códigos de identificación.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Utiliza HashMap y el método put().
+    </p>
+
+    <h3>Reto 2</h3>
+
+    <p>
+        Crea un sistema que almacene planetas y sus temperaturas promedio,
+        permitiendo consultar cualquier planeta mediante su nombre.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Utiliza get() para recuperar información.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>5. Clip Explicativo</h2>
+
+    <p>
+        El siguiente video explica el funcionamiento de las tablas hash.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/shs0KM3wKv8"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<section class="temas" style="text-align:center;">
+    <a href="../index.html" class="card">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>Proyecto Académico - Estructura de Datos 2026</p>
+</footer>
 
 </body>
 </html>

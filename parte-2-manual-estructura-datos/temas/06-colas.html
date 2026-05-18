@@ -3,131 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE DEL TEMA</title>
+    <title>Colas - Queue y Variantes</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>NOMBRE DEL TEMA</h1>
-            <p>
-                Breve descripción introductoria del tema
-            </p>
-        </div>
-    </header>
-
-    <!-- DOCUMENTACIÓN -->
-    <section class="temas">
-        <h2>1. Documentación</h2>
-
-        <h3>Definición</h3>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Colas — Queue y Variantes</h1>
         <p>
-            Aquí explicas qué es el tema.
+            Las colas son estructuras de datos que organizan elementos siguiendo
+            el principio FIFO, donde el primer dato en entrar es el primero en salir.
         </p>
+    </div>
+</header>
 
-        <h3>Utilidad</h3>
-        <p>
-            Explica para qué sirve y por qué se utiliza.
-        </p>
+<section class="temas">
 
-        <h3>Características</h3>
-        <ul>
-            <li>Característica 1</li>
-            <li>Característica 2</li>
-            <li>Característica 3</li>
-        </ul>
+    <h2>1. Documentación</h2>
 
-        <h3>Representación</h3>
-        <pre>
-Aquí va una representación visual
-o ejemplo gráfico simple
-        </pre>
+    <h3>Definición</h3>
 
-        <h3>Casos de uso</h3>
-        <p>
-            Explica dónde se aplica.
-        </p>
-    </section>
+    <p>
+        Las colas, conocidas también como Queue, son estructuras de datos lineales
+        que funcionan bajo el principio FIFO (First In, First Out), lo que significa
+        que el primer elemento que ingresa será el primero en salir.
 
-    <!-- EJEMPLOS -->
-    <section class="temas">
-        <h2>2. Ejemplos Solucionados</h2>
+        Su funcionamiento puede compararse con una fila de personas esperando atención
+        en un banco o en un aeropuerto. La primera persona que llega es la primera
+        en ser atendida, mientras que las demás esperan su turno detrás.
 
-        <h3>Ejemplo 1</h3>
-        <p>
-            Enunciado del ejercicio.
-        </p>
+        En programación, las colas permiten administrar procesos organizados en orden
+        cronológico, garantizando que los datos sean procesados respetando el orden
+        de llegada.
 
-        <pre>
-Código o solución
-        </pre>
+        Las operaciones principales de una cola son:
+    </p>
 
-        <p>
-            Explicación paso a paso:
-        </p>
-        <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ul>
+    <ul>
+        <li><strong>Enqueue:</strong> agrega un elemento al final de la cola.</li>
+        <li><strong>Dequeue:</strong> elimina el primer elemento de la cola.</li>
+        <li><strong>Peek:</strong> permite observar el primer elemento.</li>
+    </ul>
 
-        <h3>Ejemplo 2</h3>
-        <p>
-            Segundo ejercicio resuelto.
-        </p>
+    <h3>Utilidad</h3>
 
-        <pre>
-Código o solución
-        </pre>
-    </section>
+    <p>
+        Las colas son ampliamente utilizadas en sistemas operativos, servidores,
+        plataformas bancarias y redes de comunicación. Por ejemplo, las impresoras
+        manejan documentos utilizando colas para procesar cada archivo en orden.
 
-    <!-- RETOS -->
-    <section class="temas">
-        <h2>3. Retos</h2>
+        También aparecen en videojuegos multijugador donde los jugadores esperan
+        turnos de conexión, en hospitales donde se organizan pacientes y en sistemas
+        de inteligencia artificial donde múltiples tareas deben ejecutarse ordenadamente.
 
-        <h3>Reto 1</h3>
-        <p>
-            Planteamiento del ejercicio.
-        </p>
+        Existen diferentes variantes de colas como las colas circulares, colas dobles
+        y colas de prioridad, cada una diseñada para resolver necesidades específicas.
+    </p>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+    <h3>Características</h3>
 
-        <h3>Reto 2</h3>
-        <p>
-            Segundo reto sin resolver.
-        </p>
+    <ul>
+        <li>Funcionan bajo el principio FIFO.</li>
+        <li>Los elementos ingresan por el final.</li>
+        <li>Los elementos salen por el frente.</li>
+        <li>Permiten administrar procesos ordenados.</li>
+        <li>Son muy utilizadas en sistemas multitarea.</li>
+        <li>Existen múltiples variantes especializadas.</li>
+    </ul>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
-    </section>
+    <h3>Representación</h3>
 
-    <!-- VIDEO -->
-    <section class="temas">
-        <h2>4. Clip Explicativo</h2>
+    <pre>
+ENTRADA → [Robot1] [Robot2] [Robot3] → SALIDA
+    </pre>
 
-        <p>
-            Inserta aquí el enlace del video o embébelo.
-        </p>
+    <h3>Casos de uso</h3>
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
+    <p>
+        Un caso muy común ocurre en los sistemas aeroportuarios donde los aviones
+        esperan autorización para despegar en orden de llegada.
 
-    <!-- BOTÓN VOLVER -->
-    <section class="temas" style="text-align:center;">
-        <a href="../index.html" class="card">Volver al inicio</a>
-    </section>
+        Otro ejemplo aparece en plataformas de videojuegos online donde los jugadores
+        son colocados en colas automáticas antes de ingresar a partidas multijugador.
+    </p>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Proyecto Académico - Estructura de Datos 2026</p>
-    </footer>
+</section>
+
+<section class="temas">
+
+    <h2>2. Ejemplos Solucionados</h2>
+
+    <h3>Ejemplo 1</h3>
+
+    <p>
+        Un laboratorio automatizado necesita procesar muestras químicas en el mismo
+        orden en que llegan al sistema.
+    </p>
+
+    <pre>
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Laboratorio {
+
+    public static void main(String[] args) {
+
+        Queue<String> muestras = new LinkedList<>();
+
+        muestras.add("Muestra-A1");
+        muestras.add("Muestra-B9");
+        muestras.add("Muestra-C5");
+
+        System.out.println("Primera muestra:");
+
+        System.out.println(muestras.peek());
+
+        muestras.remove();
+
+        System.out.println("Nueva muestra al frente:");
+
+        System.out.println(muestras.peek());
+    }
+}
+    </pre>
+
+    <p>
+        Explicación paso a paso:
+    </p>
+
+    <ul>
+        <li>Se crea una cola utilizando Queue.</li>
+        <li>Las muestras ingresan mediante add().</li>
+        <li>peek() permite observar el primer dato.</li>
+        <li>remove() elimina el primer elemento.</li>
+        <li>La cola reorganiza automáticamente el orden.</li>
+    </ul>
+
+    <h3>Ejemplo 2</h3>
+
+    <p>
+        Un sistema de control marítimo necesita administrar barcos esperando permiso
+        para ingresar al puerto.
+    </p>
+
+    <pre>
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Puerto {
+
+    public static void main(String[] args) {
+
+        Queue<String> barcos = new LinkedList<>();
+
+        barcos.add("Barco Atlas");
+        barcos.add("Barco Neptune");
+        barcos.add("Barco Horizon");
+
+        while(!barcos.isEmpty()){
+
+            System.out.println("Ingresando:");
+
+            System.out.println(barcos.remove());
+        }
+    }
+}
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>3. Variantes de Colas</h2>
+
+    <h3>Cola Circular</h3>
+
+    <p>
+        La cola circular conecta el último espacio nuevamente con el primero,
+        optimizando el uso de memoria y permitiendo reutilizar posiciones vacías.
+    </p>
+
+    <h3>Cola Doble</h3>
+
+    <p>
+        Permite insertar y eliminar elementos tanto al inicio como al final
+        de la estructura.
+    </p>
+
+    <h3>Cola de Prioridad</h3>
+
+    <p>
+        Los elementos se organizan según un nivel de prioridad y no únicamente
+        por orden de llegada.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>4. Retos</h2>
+
+    <h3>Reto 1</h3>
+
+    <p>
+        Diseña una cola que administre turnos de robots industriales dentro
+        de una fábrica automatizada.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Utiliza add() para insertar elementos y remove() para eliminarlos.
+    </p>
+
+    <h3>Reto 2</h3>
+
+    <p>
+        Crea una cola de prioridad que organice misiones espaciales según
+        su nivel de urgencia.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Investiga la estructura PriorityQueue.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>5. Clip Explicativo</h2>
+
+    <p>
+        El siguiente video explica el funcionamiento de las colas y sus variantes.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/okr-XE8yTO8"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<section class="temas" style="text-align:center;">
+    <a href="../index.html" class="card">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>Proyecto Académico - Estructura de Datos 2026</p>
+</footer>
 
 </body>
 </html>

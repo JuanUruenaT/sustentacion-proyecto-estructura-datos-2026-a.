@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farmacia Turnos</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>Farmacia SaludPlus</h1>
+
+        <p>Sistema Inteligente de Turnos</p>
+
+    </header>
+
+    <main class="contenedor">
+
+        <section class="card formulario-card">
+
+            <h2>Separar Turno</h2>
+
+            <form id="formulario">
+
+                <input type="text"
+                       id="nombre"
+                       placeholder="Nombre completo"
+                       required>
+
+                <input type="email"
+                       id="correo"
+                       placeholder="Correo electrónico"
+                       required>
+
+                <input type="text"
+                       id="documento"
+                       placeholder="Número de documento"
+                       required>
+
+                <select id="categoria">
+
+                    <option value="Medicamentos">
+                        Medicamentos
+                    </option>
+
+                    <option value="Fórmulas Médicas">
+                        Fórmulas Médicas
+                    </option>
+
+                    <option value="Inyecciones">
+                        Inyecciones
+                    </option>
+
+                    <option value="Atención Prioritaria">
+                        Atención Prioritaria
+                    </option>
+
+                </select>
+
+                <button type="submit">
+
+                    Registrar Turno
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="card tabla-card">
+
+            <h2>Turnos Registrados</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Turno</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaTurnos">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

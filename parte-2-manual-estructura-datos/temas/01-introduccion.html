@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRODUCCIÓN A ESTRUCTURA DE DATOS</title>
+    <title>Introducción a las Estructuras de Datos</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
@@ -11,122 +11,202 @@
     <!-- ENCABEZADO -->
     <header class="hero">
         <div class="hero-content">
-            <h1>INTRODUCCIÓN A ESTRUCTURA DE DATOS</h1>
+            <h1>Introducción a las Estructuras de Datos</h1>
             <p>
-                Conceptos basicos de la estructura de datos
+                Comprender las estructuras de datos es fundamental para desarrollar
+                programas eficientes, organizados y capaces de manejar grandes cantidades
+                de información de manera rápida y segura.
             </p>
         </div>
     </header>
 
     <!-- DOCUMENTACIÓN -->
     <section class="temas">
+
         <h2>1. Documentación</h2>
 
         <h3>Definición</h3>
-<p>
-    Las estructuras de datos son formas de organizar y almacenar información dentro de un programa 
-    para facilitar su uso. Permiten guardar, buscar, modificar y recorrer datos de manera eficiente.
-</p>
+        <p>
+            Las estructuras de datos son métodos utilizados en programación para organizar,
+            almacenar y administrar información dentro de un sistema computacional. Gracias
+            a ellas, los programas pueden manejar datos de manera eficiente dependiendo de
+            las necesidades del problema que se desea resolver.
 
-<h3>Utilidad</h3>
-<p>
-    Son importantes porque ayudan a organizar grandes cantidades de información dentro de un sistema. 
-    Gracias a ellas, los programas pueden procesar datos de forma rápida, ordenada y eficiente.
-</p>
+            En programación no basta únicamente con guardar información; también es necesario
+            acceder a ella rápidamente, modificarla, recorrerla o eliminarla sin afectar
+            el rendimiento del sistema. Por esta razón, las estructuras de datos se han
+            convertido en una parte esencial dentro del desarrollo de software moderno.
 
-<h3>Características</h3>
-<ul>
-    <li>Organizan la información de manera lógica.</li>
-    <li>Facilitan el acceso a los datos.</li>
-    <li>Permiten insertar, eliminar y buscar información.</li>
-    <li>Optimizan el rendimiento del programa.</li>
-    <li>Se adaptan a diferentes necesidades.</li>
-</ul>
+            Actualmente, prácticamente todos los sistemas tecnológicos utilizan estructuras
+            de datos. Redes sociales, videojuegos, aplicaciones bancarias, plataformas de
+            streaming e incluso sistemas de inteligencia artificial dependen del correcto
+            uso de estas estructuras para funcionar adecuadamente.
+        </p>
 
-<h3>Representación</h3>
-<pre>
-Dato → Organización → Procesamiento → Resultado
-</pre>
+        <h3>Utilidad</h3>
+        <p>
+            La principal utilidad de las estructuras de datos consiste en optimizar la forma
+            en la que los programas administran la información. Dependiendo de la estructura
+            utilizada, un sistema puede ejecutar procesos más rápidamente, consumir menos
+            memoria y resolver problemas complejos de manera más sencilla.
 
-<h3>Casos de uso</h3>
-<ul>
-    <li>Sistemas académicos para almacenar estudiantes y notas.</li>
-    <li>Inventarios de productos.</li>
-    <li>Redes sociales para gestionar usuarios y publicaciones.</li>
-    <li>Sistemas bancarios para registrar transacciones.</li>
-    <li>Aplicaciones de mensajería.</li>
-</ul>
+            Por ejemplo, en una plataforma educativa donde miles de estudiantes ingresan
+            simultáneamente para consultar horarios, notas y materias, sería extremadamente
+            difícil manejar toda esa información sin una organización adecuada. Las estructuras
+            de datos permiten clasificar registros, realizar búsquedas rápidas y mantener el
+            sistema estable incluso cuando existen muchos usuarios conectados al mismo tiempo.
+
+            Además, ayudan a que los algoritmos sean más eficientes y facilitan el desarrollo
+            de aplicaciones escalables capaces de soportar grandes volúmenes de datos.
+        </p>
+
+        <h3>Características</h3>
+
+        <ul>
+            <li>Permiten organizar información de manera lógica y estructurada.</li>
+            <li>Facilitan búsquedas y operaciones rápidas sobre los datos.</li>
+            <li>Ayudan a optimizar memoria y procesamiento.</li>
+            <li>Existen diferentes tipos según el problema a resolver.</li>
+            <li>Son fundamentales en el desarrollo de algoritmos eficientes.</li>
+            <li>Se utilizan en prácticamente todos los sistemas informáticos actuales.</li>
+        </ul>
+
+        <h3>Representación</h3>
+
+        <pre>
+Datos → Organización → Procesamiento → Resultado
+
+Usuarios → Base de datos → Algoritmos → Información mostrada
+        </pre>
+
+        <h3>Casos de uso</h3>
+
+        <p>
+            Un ejemplo muy claro del uso de estructuras de datos puede observarse en las
+            aplicaciones de navegación GPS. Estas aplicaciones necesitan calcular rutas,
+            almacenar ubicaciones y encontrar caminos más rápidos entre miles de puntos
+            diferentes en tiempo real.
+
+            Otro caso común ocurre en las plataformas de streaming como Netflix o Spotify,
+            donde se almacenan millones de películas y canciones organizadas mediante
+            diferentes estructuras que permiten realizar búsquedas y recomendaciones
+            personalizadas para cada usuario.
+        </p>
+
     </section>
 
     <!-- EJEMPLOS -->
     <section class="temas">
+
         <h2>2. Ejemplos Solucionados</h2>
 
         <h3>Ejemplo 1</h3>
+
         <p>
-            Enunciado del ejercicio.
+            Una empresa de transporte necesita almacenar las placas de los buses activos
+            durante el día para posteriormente consultar cuáles están disponibles.
         </p>
 
         <pre>
-Código o solución
+String buses[] = {
+    "HUI-203",
+    "NEI-991",
+    "TRN-550",
+    "COL-712"
+};
+
+System.out.println(buses[2]);
         </pre>
 
         <p>
             Explicación paso a paso:
         </p>
+
         <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
+            <li>Se crea un arreglo llamado buses.</li>
+            <li>Cada posición almacena la placa de un vehículo.</li>
+            <li>La posición número 2 contiene el valor "TRN-550".</li>
+            <li>El sistema muestra esa placa en pantalla.</li>
         </ul>
 
         <h3>Ejemplo 2</h3>
+
         <p>
-            Segundo ejercicio resuelto.
+            Un hospital necesita organizar los nombres de pacientes que ingresan a urgencias.
         </p>
 
         <pre>
-Código o solución
+String pacientes[] = {
+    "Camila",
+    "Santiago",
+    "Valentina",
+    "Andres"
+};
+
+for(int i = 0; i < pacientes.length; i++){
+    System.out.println(pacientes[i]);
+}
         </pre>
+
+        <p>
+            En este ejemplo se utiliza un ciclo para recorrer cada paciente almacenado
+            dentro del arreglo y mostrarlo en pantalla.
+        </p>
+
     </section>
 
     <!-- RETOS -->
     <section class="temas">
+
         <h2>3. Retos</h2>
 
         <h3>Reto 1</h3>
+
         <p>
-            Planteamiento del ejercicio.
+            Crea un arreglo que almacene cinco ciudades de Colombia y muestra únicamente
+            la ciudad ubicada en la última posición.
         </p>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+        <p>
+            <strong>Pista:</strong>
+            Recuerda que los arreglos comienzan desde la posición 0.
+        </p>
 
         <h3>Reto 2</h3>
+
         <p>
-            Segundo reto sin resolver.
+            Diseña un programa que almacene temperaturas registradas durante una semana
+            y luego calcule cuál fue la temperatura más alta.
         </p>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
+        <p>
+            <strong>Pista:</strong>
+            Puedes utilizar un ciclo para recorrer todas las posiciones.
+        </p>
+
     </section>
 
     <!-- VIDEO -->
     <section class="temas">
+
         <h2>4. Clip Explicativo</h2>
 
         <p>
-            Inserta aquí el enlace del video o embébelo.
+            El siguiente video explica de manera sencilla qué son las estructuras
+            de datos y por qué son importantes en programación.
         </p>
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/oSWTXtMglKE"
             frameborder="0"
             allowfullscreen>
         </iframe>
+
     </section>
 
-    <!-- BOTÓN VOLVER -->
+    <!-- BOTÓN -->
     <section class="temas" style="text-align:center;">
         <a href="../index.html" class="card">Volver al inicio</a>
     </section>

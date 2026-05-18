@@ -3,131 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE DEL TEMA</title>
+    <title>Grafos: Conceptos y Presentación</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>NOMBRE DEL TEMA</h1>
-            <p>
-                Breve descripción introductoria del tema
-            </p>
-        </div>
-    </header>
-
-    <!-- DOCUMENTACIÓN -->
-    <section class="temas">
-        <h2>1. Documentación</h2>
-
-        <h3>Definición</h3>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Grafos: Conceptos y Presentación</h1>
         <p>
-            Aquí explicas qué es el tema.
+            Los grafos son estructuras de datos utilizadas para representar conexiones,
+            relaciones y rutas entre diferentes elementos dentro de sistemas complejos.
         </p>
+    </div>
+</header>
 
-        <h3>Utilidad</h3>
-        <p>
-            Explica para qué sirve y por qué se utiliza.
-        </p>
+<section class="temas">
 
-        <h3>Características</h3>
-        <ul>
-            <li>Característica 1</li>
-            <li>Característica 2</li>
-            <li>Característica 3</li>
-        </ul>
+    <h2>1. Documentación</h2>
 
-        <h3>Representación</h3>
-        <pre>
-Aquí va una representación visual
-o ejemplo gráfico simple
-        </pre>
+    <h3>Definición</h3>
 
-        <h3>Casos de uso</h3>
-        <p>
-            Explica dónde se aplica.
-        </p>
-    </section>
+    <p>
+        Los grafos son estructuras de datos no lineales formadas por vértices
+        y aristas. Los vértices representan elementos o nodos, mientras que
+        las aristas representan conexiones o relaciones entre dichos nodos.
 
-    <!-- EJEMPLOS -->
-    <section class="temas">
-        <h2>2. Ejemplos Solucionados</h2>
+        Esta estructura es ampliamente utilizada para modelar problemas del mundo
+        real donde existen conexiones entre diferentes entidades. Por ejemplo,
+        redes sociales, sistemas GPS, rutas aéreas, redes eléctricas y conexiones
+        de internet pueden representarse mediante grafos.
 
-        <h3>Ejemplo 1</h3>
-        <p>
-            Enunciado del ejercicio.
-        </p>
+        Los grafos pueden ser dirigidos o no dirigidos. En los grafos dirigidos,
+        las conexiones poseen una dirección específica, mientras que en los no
+        dirigidos la conexión funciona en ambos sentidos.
 
-        <pre>
-Código o solución
-        </pre>
+        También existen grafos ponderados, donde las conexiones poseen valores
+        asociados como distancia, costo o tiempo.
+    </p>
 
-        <p>
-            Explicación paso a paso:
-        </p>
-        <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ul>
+    <h3>Utilidad</h3>
 
-        <h3>Ejemplo 2</h3>
-        <p>
-            Segundo ejercicio resuelto.
-        </p>
+    <p>
+        Los grafos son fundamentales dentro de múltiples áreas tecnológicas.
+        Por ejemplo, las aplicaciones de navegación GPS utilizan grafos para
+        calcular rutas más rápidas entre ciudades o ubicaciones.
 
-        <pre>
-Código o solución
-        </pre>
-    </section>
+        Las redes sociales también funcionan mediante grafos, donde cada usuario
+        representa un nodo y las amistades representan conexiones.
 
-    <!-- RETOS -->
-    <section class="temas">
-        <h2>3. Retos</h2>
+        Además, aparecen en inteligencia artificial, robótica, telecomunicaciones,
+        videojuegos y sistemas de logística internacional donde se requiere analizar
+        conexiones complejas entre múltiples elementos.
+    </p>
 
-        <h3>Reto 1</h3>
-        <p>
-            Planteamiento del ejercicio.
-        </p>
+    <h3>Características</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+    <ul>
+        <li>Representan relaciones entre elementos.</li>
+        <li>Utilizan vértices y aristas.</li>
+        <li>Pueden ser dirigidos o no dirigidos.</li>
+        <li>Permiten analizar rutas y conexiones.</li>
+        <li>Son utilizados en inteligencia artificial y redes.</li>
+        <li>Facilitan cálculos de caminos mínimos.</li>
+    </ul>
 
-        <h3>Reto 2</h3>
-        <p>
-            Segundo reto sin resolver.
-        </p>
+    <h3>Representación</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
-    </section>
+    <pre>
+            A ----- B
+            |       |
+            |       |
+            C ----- D
+    </pre>
 
-    <!-- VIDEO -->
-    <section class="temas">
-        <h2>4. Clip Explicativo</h2>
+    <h3>Casos de uso</h3>
 
-        <p>
-            Inserta aquí el enlace del video o embébelo.
-        </p>
+    <p>
+        Un ejemplo moderno ocurre en aplicaciones de transporte como Uber
+        o Google Maps, donde las calles son representadas mediante grafos
+        para calcular trayectos eficientes.
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
+        Otro caso importante aparece en plataformas de redes sociales donde
+        millones de usuarios se conectan mediante relaciones representadas
+        matemáticamente con grafos.
+    </p>
 
-    <!-- BOTÓN VOLVER -->
-    <section class="temas" style="text-align:center;">
-        <a href="../index.html" class="card">Volver al inicio</a>
-    </section>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Proyecto Académico - Estructura de Datos 2026</p>
-    </footer>
+<section class="temas">
+
+    <h2>2. Tipos de Grafos</h2>
+
+    <h3>Grafos Dirigidos</h3>
+
+    <p>
+        Las conexiones poseen dirección específica.
+    </p>
+
+    <pre>
+A → B → C
+    </pre>
+
+    <h3>Grafos No Dirigidos</h3>
+
+    <p>
+        Las conexiones funcionan en ambos sentidos.
+    </p>
+
+    <pre>
+A ----- B
+    </pre>
+
+    <h3>Grafos Ponderados</h3>
+
+    <p>
+        Cada conexión posee un valor numérico asociado.
+    </p>
+
+    <pre>
+A --5-- B
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>3. Ejemplos Solucionados</h2>
+
+    <h3>Ejemplo 1</h3>
+
+    <p>
+        Un sistema de transporte marítimo necesita representar rutas
+        entre puertos internacionales.
+    </p>
+
+    <pre>
+import java.util.*;
+
+public class Puertos {
+
+    public static void main(String[] args) {
+
+        Map<String, List<String>> grafo = new HashMap<>();
+
+        grafo.put("Puerto Norte",
+        Arrays.asList("Puerto Central", "Puerto Sur"));
+
+        grafo.put("Puerto Central",
+        Arrays.asList("Puerto Norte", "Puerto Este"));
+
+        grafo.put("Puerto Sur",
+        Arrays.asList("Puerto Norte"));
+
+        for(String puerto : grafo.keySet()){
+
+            System.out.println(puerto + " conecta con:");
+
+            System.out.println(grafo.get(puerto));
+        }
+    }
+}
+    </pre>
+
+    <p>
+        Explicación paso a paso:
+    </p>
+
+    <ul>
+        <li>Se crea un grafo utilizando HashMap.</li>
+        <li>Cada puerto representa un nodo.</li>
+        <li>Las listas almacenan conexiones.</li>
+        <li>El sistema recorre todos los nodos.</li>
+        <li>Las rutas se muestran en pantalla.</li>
+    </ul>
+
+    <h3>Ejemplo 2</h3>
+
+    <p>
+        Una red espacial necesita representar conexiones entre satélites.
+    </p>
+
+    <pre>
+class Grafo {
+
+    int matriz[][] = new int[4][4];
+
+    public void conectar(int origen, int destino){
+
+        matriz[origen][destino] = 1;
+    }
+
+    public void mostrar(){
+
+        for(int i = 0; i < matriz.length; i++){
+
+            for(int j = 0; j < matriz.length; j++){
+
+                System.out.print(matriz[i][j] + " ");
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Grafo g = new Grafo();
+
+        g.conectar(0,1);
+        g.conectar(1,2);
+        g.conectar(2,3);
+
+        g.mostrar();
+    }
+}
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>4. Recorridos en Grafos</h2>
+
+    <h3>DFS — Depth First Search</h3>
+
+    <p>
+        Explora profundamente cada camino antes de retroceder.
+    </p>
+
+    <h3>BFS — Breadth First Search</h3>
+
+    <p>
+        Recorre primero todos los nodos cercanos antes de avanzar.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>5. Retos</h2>
+
+    <h3>Reto 1</h3>
+
+    <p>
+        Diseña un grafo que represente conexiones entre estaciones
+        de energía solar inteligentes.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Cada estación debe conectarse con otras estaciones.
+    </p>
+
+    <h3>Reto 2</h3>
+
+    <p>
+        Crea un sistema de rutas aéreas utilizando grafos ponderados
+        donde cada conexión represente distancia entre ciudades.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Puedes utilizar matrices de adyacencia.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>6. Clip Explicativo</h2>
+
+    <p>
+        El siguiente video explica el funcionamiento de los grafos.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tWVWeAqZ0WU"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<section class="temas" style="text-align:center;">
+    <a href="../index.html" class="card">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>Proyecto Académico - Estructura de Datos 2026</p>
+</footer>
 
 </body>
 </html>

@@ -3,131 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOMBRE DEL TEMA</title>
+    <title>Árboles Balanceados AVL</title>
     <link rel="stylesheet" href="../css/temas.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>NOMBRE DEL TEMA</h1>
-            <p>
-                Breve descripción introductoria del tema
-            </p>
-        </div>
-    </header>
-
-    <!-- DOCUMENTACIÓN -->
-    <section class="temas">
-        <h2>1. Documentación</h2>
-
-        <h3>Definición</h3>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Árboles Balanceados — AVL</h1>
         <p>
-            Aquí explicas qué es el tema.
+            Los árboles AVL son estructuras de datos avanzadas que mantienen
+            automáticamente el equilibrio del árbol para optimizar búsquedas,
+            inserciones y eliminaciones de información.
         </p>
+    </div>
+</header>
 
-        <h3>Utilidad</h3>
-        <p>
-            Explica para qué sirve y por qué se utiliza.
-        </p>
+<section class="temas">
 
-        <h3>Características</h3>
-        <ul>
-            <li>Característica 1</li>
-            <li>Característica 2</li>
-            <li>Característica 3</li>
-        </ul>
+    <h2>1. Documentación</h2>
 
-        <h3>Representación</h3>
-        <pre>
-Aquí va una representación visual
-o ejemplo gráfico simple
-        </pre>
+    <h3>Definición</h3>
 
-        <h3>Casos de uso</h3>
-        <p>
-            Explica dónde se aplica.
-        </p>
-    </section>
+    <p>
+        Los árboles AVL son una variación especializada de los árboles binarios
+        de búsqueda (BST). Su principal característica consiste en mantener
+        automáticamente el equilibrio de la estructura para evitar que el árbol
+        se vuelva demasiado desordenado o inclinado hacia un solo lado.
 
-    <!-- EJEMPLOS -->
-    <section class="temas">
-        <h2>2. Ejemplos Solucionados</h2>
+        El nombre AVL proviene de los apellidos de sus creadores:
+        Adelson-Velsky y Landis, quienes desarrollaron este modelo con el objetivo
+        de optimizar las búsquedas dentro de árboles binarios.
 
-        <h3>Ejemplo 1</h3>
-        <p>
-            Enunciado del ejercicio.
-        </p>
+        Un árbol AVL controla constantemente la diferencia de altura entre sus
+        subárboles izquierdo y derecho. Cuando la diferencia supera ciertos límites,
+        el sistema realiza rotaciones automáticas para reorganizar los nodos y
+        mantener el equilibrio.
 
-        <pre>
-Código o solución
-        </pre>
+        Gracias a esto, las operaciones de búsqueda, inserción y eliminación
+        continúan siendo rápidas incluso cuando el árbol almacena grandes cantidades
+        de información.
+    </p>
 
-        <p>
-            Explicación paso a paso:
-        </p>
-        <ul>
-            <li>Paso 1</li>
-            <li>Paso 2</li>
-            <li>Paso 3</li>
-        </ul>
+    <h3>Utilidad</h3>
 
-        <h3>Ejemplo 2</h3>
-        <p>
-            Segundo ejercicio resuelto.
-        </p>
+    <p>
+        Los árboles AVL son utilizados en sistemas donde se realizan búsquedas
+        constantes y donde el rendimiento debe mantenerse estable.
 
-        <pre>
-Código o solución
-        </pre>
-    </section>
+        Por ejemplo, en plataformas bancarias donde millones de operaciones deben
+        localizarse rápidamente, los árboles AVL ayudan a evitar retrasos y
+        optimizan el tiempo de respuesta.
 
-    <!-- RETOS -->
-    <section class="temas">
-        <h2>3. Retos</h2>
+        También aparecen en motores de búsqueda, sistemas médicos, videojuegos,
+        inteligencia artificial y aplicaciones científicas que manejan enormes
+        volúmenes de datos dinámicos.
+    </p>
 
-        <h3>Reto 1</h3>
-        <p>
-            Planteamiento del ejercicio.
-        </p>
+    <h3>Características</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí una recomendación.</p>
+    <ul>
+        <li>Mantienen equilibrio automático.</li>
+        <li>Optimizan búsquedas complejas.</li>
+        <li>Utilizan rotaciones automáticas.</li>
+        <li>Son una evolución de los BST.</li>
+        <li>Reducen tiempos de procesamiento.</li>
+        <li>Funcionan eficientemente con grandes cantidades de datos.</li>
+    </ul>
 
-        <h3>Reto 2</h3>
-        <p>
-            Segundo reto sin resolver.
-        </p>
+    <h3>Representación</h3>
 
-        <p><strong>Pista:</strong> Escribe aquí otra recomendación.</p>
-    </section>
+    <pre>
+                40
+               /  \
+             20    60
+            / \    / \
+          10  30 50  70
+    </pre>
 
-    <!-- VIDEO -->
-    <section class="temas">
-        <h2>4. Clip Explicativo</h2>
+    <h3>Casos de uso</h3>
 
-        <p>
-            Inserta aquí el enlace del video o embébelo.
-        </p>
+    <p>
+        Un ejemplo moderno aparece en plataformas de inteligencia artificial
+        que necesitan organizar millones de datos sin perder velocidad de acceso.
 
-        <iframe 
-            width="560" 
-            height="315" 
-            src="PEGA_AQUI_EL_LINK_DEL_VIDEO"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </section>
+        Otro caso importante ocurre en sistemas hospitalarios inteligentes donde
+        historiales médicos deben consultarse rápidamente sin importar cuántos
+        registros existan almacenados.
+    </p>
 
-    <!-- BOTÓN VOLVER -->
-    <section class="temas" style="text-align:center;">
-        <a href="../index.html" class="card">Volver al inicio</a>
-    </section>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Proyecto Académico - Estructura de Datos 2026</p>
-    </footer>
+<section class="temas">
+
+    <h2>2. Rotaciones en AVL</h2>
+
+    <h3>Rotación Simple a la Derecha</h3>
+
+    <p>
+        Se utiliza cuando el árbol se inclina demasiado hacia la izquierda.
+    </p>
+
+    <h3>Rotación Simple a la Izquierda</h3>
+
+    <p>
+        Se aplica cuando el árbol se inclina excesivamente hacia la derecha.
+    </p>
+
+    <h3>Rotación Doble</h3>
+
+    <p>
+        Combina dos rotaciones para corregir desequilibrios más complejos.
+    </p>
+
+    <h3>Factor de Balance</h3>
+
+    <p>
+        Representa la diferencia de altura entre los subárboles izquierdo y derecho.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>3. Ejemplos Solucionados</h2>
+
+    <h3>Ejemplo 1</h3>
+
+    <p>
+        Un laboratorio espacial necesita almacenar mediciones gravitacionales
+        manteniendo el árbol balanceado.
+    </p>
+
+    <pre>
+class Nodo {
+
+    int dato;
+    int altura;
+
+    Nodo izquierdo;
+    Nodo derecho;
+
+    public Nodo(int dato){
+
+        this.dato = dato;
+        altura = 1;
+    }
+}
+
+public class AVL {
+
+    Nodo raiz;
+
+    int altura(Nodo nodo){
+
+        if(nodo == null){
+
+            return 0;
+        }
+
+        return nodo.altura;
+    }
+
+    int balance(Nodo nodo){
+
+        if(nodo == null){
+
+            return 0;
+        }
+
+        return altura(nodo.izquierdo) - altura(nodo.derecho);
+    }
+
+    Nodo rotarDerecha(Nodo y){
+
+        Nodo x = y.izquierdo;
+
+        Nodo t2 = x.derecho;
+
+        x.derecho = y;
+
+        y.izquierdo = t2;
+
+        y.altura = Math.max(
+        altura(y.izquierdo),
+        altura(y.derecho)) + 1;
+
+        x.altura = Math.max(
+        altura(x.izquierdo),
+        altura(x.derecho)) + 1;
+
+        return x;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Árbol AVL inicializado");
+    }
+}
+    </pre>
+
+    <p>
+        Explicación paso a paso:
+    </p>
+
+    <ul>
+        <li>Se crea la estructura Nodo.</li>
+        <li>Cada nodo almacena altura.</li>
+        <li>El sistema calcula el balance del árbol.</li>
+        <li>Las rotaciones corrigen desequilibrios.</li>
+        <li>El árbol mantiene búsquedas eficientes.</li>
+    </ul>
+
+    <h3>Ejemplo 2</h3>
+
+    <p>
+        Un sistema oceánico necesita detectar cuándo un árbol
+        se encuentra desbalanceado.
+    </p>
+
+    <pre>
+class Nodo {
+
+    int profundidad;
+
+    Nodo izquierdo;
+    Nodo derecho;
+
+    public Nodo(int profundidad){
+
+        this.profundidad = profundidad;
+    }
+}
+
+public class Balanceo {
+
+    public static int altura(Nodo nodo){
+
+        if(nodo == null){
+
+            return 0;
+        }
+
+        int izquierda = altura(nodo.izquierdo);
+
+        int derecha = altura(nodo.derecho);
+
+        return Math.max(izquierda, derecha) + 1;
+    }
+
+    public static void main(String[] args) {
+
+        Nodo raiz = new Nodo(100);
+
+        raiz.izquierdo = new Nodo(50);
+
+        raiz.izquierdo.izquierdo = new Nodo(25);
+
+        int diferencia =
+        altura(raiz.izquierdo) -
+        altura(raiz.derecho);
+
+        System.out.println("Factor de balance:");
+
+        System.out.println(diferencia);
+    }
+}
+    </pre>
+
+</section>
+
+<section class="temas">
+
+    <h2>4. Ventajas y Desventajas</h2>
+
+    <h3>Ventajas</h3>
+
+    <ul>
+        <li>Búsquedas rápidas.</li>
+        <li>Balance automático.</li>
+        <li>Buen rendimiento constante.</li>
+        <li>Eficiencia con grandes cantidades de datos.</li>
+    </ul>
+
+    <h3>Desventajas</h3>
+
+    <ul>
+        <li>Implementación más compleja.</li>
+        <li>Las rotaciones consumen procesamiento adicional.</li>
+        <li>Mayor dificultad de mantenimiento.</li>
+    </ul>
+
+</section>
+
+<section class="temas">
+
+    <h2>5. Retos</h2>
+
+    <h3>Reto 1</h3>
+
+    <p>
+        Diseña un árbol AVL que almacene niveles de radiación
+        detectados por sensores espaciales.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Debes calcular el factor de balance.
+    </p>
+
+    <h3>Reto 2</h3>
+
+    <p>
+        Crea un sistema AVL que reorganice automáticamente
+        datos climáticos registrados por satélites.
+    </p>
+
+    <p>
+        <strong>Pista:</strong>
+        Investiga las rotaciones simples y dobles.
+    </p>
+
+</section>
+
+<section class="temas">
+
+    <h2>6. Clip Explicativo</h2>
+
+    <p>
+        El siguiente video explica el funcionamiento de los árboles AVL.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jDM6_TnYIqE"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+
+<section class="temas" style="text-align:center;">
+    <a href="../index.html" class="card">Volver al inicio</a>
+</section>
+
+<footer>
+    <p>Proyecto Académico - Estructura de Datos 2026</p>
+</footer>
 
 </body>
 </html>
