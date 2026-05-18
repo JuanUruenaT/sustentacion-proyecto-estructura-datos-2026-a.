@@ -94,3 +94,61 @@ td{
 tr:hover{
     background:#f3f3f3;
 }
+
+.admin-card{
+    width:90%;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:40px;
+}
+
+.login-admin{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.login-admin input{
+    flex:1;
+}
+
+.estado{
+    padding:8px 12px;
+    border-radius:10px;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+    background:#0f766e;
+}
+
+.acciones{
+    display:flex;
+    gap:10px;
+}
+
+.btn-atender{
+    background:#2563eb;
+}
+
+.btn-finalizar{
+    background:#16a34a;
+}
+
+.btn-cancelar{
+    background:#dc2626;
+}
+
+.estado-atendiendo{
+    background: #3498db;
+    color: white;
+}
+
+.estado-atendido{
+    background: #2ecc71;
+    color: white;
+}
+
+.estado-cancelado{
+    background: #e74c3c;
+    color: white;
+}
