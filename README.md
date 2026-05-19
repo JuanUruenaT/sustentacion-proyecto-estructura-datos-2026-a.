@@ -177,7 +177,3 @@ El proyecto fue desarrollado con fines académicos para aplicar conocimientos re
 * Diseño de interfaces web.
 
 ---
-
-# Autor
-
-Proyecto académico desarrollado para la asignatura de Desarrollo Web y Estructuras de Datos.
