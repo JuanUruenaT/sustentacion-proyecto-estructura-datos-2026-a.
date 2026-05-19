@@ -19,13 +19,13 @@ Cada parte fue desarrollada utilizando tecnologías frontend y backend modernas,
 
 # Integrantes
 
-*
+* David Santiago Vargas Jimenez
 
-*
+* Vanessa Vargas Gamboa
 
-*
+* Juan Sebastián Urueña Torres
 
-*
+
 
 ---
 
