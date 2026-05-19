@@ -60,7 +60,7 @@ pre {
 }
 
 .card {
-    background: #2563eb;
+    background: #465C78;
     color: white;
     padding: 15px 25px;
     border-radius: 12px;
@@ -70,7 +70,7 @@ pre {
 }
 
 .card:hover {
-    background: #1e40af;
+    background: #465C78;
 }
 
 footer {
